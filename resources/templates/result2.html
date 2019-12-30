@@ -13,6 +13,7 @@
 <p th:text="'Salary: ' + ${user.salary}" />
 <p th:text="'Emale: ' + ${user.emale}" />
 <p th:text="'Place of work: ' + ${user.placeOfWork}" />
-<a href="/user">Submit another user</a>
+<p th:text="'Current time: ' + ${#dates.format(#dates.createNow(), 'dd MMM yyyy HH:mm')}" />
+<p th:text="'User agent: ' + ${#httpServletRequest.getHeader('User-Agent')}" />
 </body>
 </html>

@@ -5,8 +5,8 @@
 <body>
 <h1>Form</h1>
 <form action="#" th:action="@{/search}" method="get">
-    <p>Name: <input type="search"  /></p>
-    <p>Surname: <input type="search"  /></p>
+    <p>Name: <input type="search" name = "name"/></p>
+    <p>Surname: <input type="search" name = "surname" /></p>
     <p><input type="submit" value="search" />
         <input type="reset" value="Reset" /></p>
 </form>

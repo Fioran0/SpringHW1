@@ -4,7 +4,7 @@
 </head>
 <body>
 <h1>Form</h1>
-<form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+<form action="#" th:action="@{/user}" th:object="${user}" method="post">
     <p>Name: <input type="text" th:field="*{name}" /></p>
     <p>Surname: <input type="text" th:field="*{surname}" /></p>
     <p>Patronymic: <input type="text" th:field="*{patronymic}" /></p>
